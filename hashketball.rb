@@ -125,10 +125,10 @@ def num_points_scored(player)
       # binding.pry
       if category == :players
         stats.each do |name, values|
-          # binding.pry
+          binding.pry
 
             stats.each do |attribute, statistics|
-              # binding.pry
+              binding.pry
               if player == attribute
                 statistics.each do |type, amount|
                   # binding.pry
