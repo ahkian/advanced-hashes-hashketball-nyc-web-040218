@@ -117,6 +117,10 @@ def game_hash
 }
 end
 
+def all_players(hash)
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
+
 def num_points_scored(player)
   answer = ""
   game_hash.each do |location, team_data|
